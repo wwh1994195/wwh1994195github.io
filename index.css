@@ -10,13 +10,18 @@ body{
     height: 80vh;
     background-color: rgb(23, 23, 94);
     font-size: 60px;
-    text-align: center;
-    line-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* text-align: center;
+    line-height: 80vh; */
     
 }
 .footer{
     height: 12vh;
     background-color: rgb(23, 23, 94);
+    color: yellow;
 }
 .headPortrait{
     width: 58px;
@@ -47,13 +52,14 @@ body{
 @keyframes myfirst{
     
     0%   { left:-308px; top:500px;transform: rotate(360deg);}
+
 	100% {left:100px; top:100px;transform: rotate(-360deg);}
     
 }
 @keyframes mysecond{
     0%{opacity: 0;transform: rotate(0deg);}
     25%{opacity: .1;}
-    50%{opacity: 1;transform: rotate(180deg);}
+    50%{opacity: 1;transform: rotate(360deg);}
     100%{opacity: 0; transform: rotate(360deg);}
 }
 @keyframes mythird{
@@ -63,3 +69,15 @@ body{
 	100% {left:-700px; top:0px; }
     
 }
+.btn{
+    display: flex;
+    align-self: flex-end;
+}
+.dropScene{
+    animation: myfifth 15s forwards;
+    position: relative;
+}
+@keyframes myfifth{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-800px);}
+}  
