@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.nav{
+.title{
     text-shadow:#FF0000 0 0 10px;
     color:white;
     font-size:60px
@@ -25,12 +25,13 @@ body{
 }
 .left{
     width: 30%;
+    padding: 30px;
     
 }
 .content{
     width: 40%;
     height: 80vh;
-    /* background-color: aquamarine; */
+    min-width: 500px;
 }
 .right{
     width: 30%;
@@ -49,7 +50,7 @@ p{
 .picture{
     width: 410px;
     height: 500px;
-    padding: 30px 
+   
 }
 .case{
     display: -webkit-box;
