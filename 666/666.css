@@ -25,6 +25,7 @@ body{
 }
 .left{
     width: 30%;
+    
 }
 .content{
     width: 40%;
@@ -33,14 +34,13 @@ body{
 }
 .right{
     width: 30%;
-    padding: 30px;
-   
+    padding: 30px; 
+    
 }
 .list{
     width: 350px;
     height: 45px;
     
-
 }
 p{
     text-indent: 2rem;
@@ -49,7 +49,7 @@ p{
 .picture{
     width: 410px;
     height: 500px;
-    padding: 30px 20px;
+    padding: 30px 
 }
 .case{
     display: -webkit-box;
