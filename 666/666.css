@@ -34,12 +34,13 @@ body{
 }
 .right{
     width: 30%;
-    height: 80vh;
+    padding: 30px;
+   
 }
 .list{
     width: 350px;
     height: 45px;
-    margin: 30px;
+    
 
 }
 p{
