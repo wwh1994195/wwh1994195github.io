@@ -5,6 +5,7 @@ body{
 .header{
     height: 8vh;
     background-color: rgb(23, 23, 94);
+    text-align: center;
 }
 .main{
     height: 80vh;
@@ -28,7 +29,7 @@ body{
     height: 58px;
     border-radius: 50px;
     position: relative;
-    left: 100px;
+    left: -450px;
     top: 100px;
     animation:myfirst  5s ;
     transform: scale(3,3);
@@ -37,41 +38,60 @@ body{
 }
 .aaa{
     position: relative;
-    animation: mysecond 3s forwards;
+    animation: mysecond 5s forwards; 
+    text-align: center;
+    color: yellowgreen;
+    font-size: 40px;
+
+
+}
+.ccc{
+    position: relative;
+    left: 250px;
+    animation: myfivth 5s both; 
+    animation-delay: 5s;
+    text-align: center;
+    color: yellowgreen;
+    font-size: 40px;
+
 
 }
 .bbb{
     position: relative;
-    top: 100px;
-    animation: mythird  20s forwards;
+    right: 200px;
+    animation: mythird  10s both ;
+    animation-delay: 9s;
     color: red;
-    font-size: 70px;
+    font-size: 150px;
   
 }
 
 @keyframes myfirst{
     
-    0%   { left:-308px; top:500px;transform: rotate(360deg);}
+    0%   { left:-308px; top:-100px;transform: rotate(360deg);}
 
-	100% {left:100px; top:100px;transform: rotate(-360deg);}
+	100% {left:-450px; top:100px;transform: rotate(-360deg);}
     
 }
 @keyframes mysecond{
     0%{opacity: 0;transform: rotate(0deg);}
-    25%{opacity: .1;}
-    50%{opacity: 1;transform: rotate(360deg);}
-    100%{opacity: 0; transform: rotate(360deg);}
+    50%{opacity: .5;}
+    100%{opacity: 1; transform: rotate(360deg);}
 }
 @keyframes mythird{
     
-    0% { left:-700px; top:1000px;}
-    50%{left: -700px; top: 0px;}
-	100% {left:-700px; top:0px; }
+    /* 0% { left:-300px; top:1000px;}
+    50%{left: -300px; top: 0px;}
+	100% {left:-300px; top:0px; } */
+    0%{opacity: 0;}
+    50%{opacity: .5; transform: scale(2,2);}
+    100%{opacity: 1;}
     
 }
 .btn{
     display: flex;
     align-self: flex-end;
+    
 }
 .dropScene{
     animation: myfifth 15s forwards;
@@ -80,4 +100,11 @@ body{
 @keyframes myfifth{
     0%{transform: translateY(0);}
     100%{transform: translateY(-800px);}
+   
+}
+@keyframes myfivth{
+    0%{opacity: 0;}
+    25%{opacity: .5;transform: rotate(360deg);}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
 }  
