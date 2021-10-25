@@ -1,0 +1,1 @@
+(()=>{"use strict";var t;t=new class{constructor(t){this.url=t,this.searchParams=this.url.split("?")[1],this.params=this.getParams(this.searchParams)}getParams(t){let s={};return t.split("&").forEach((t=>{let a=t.split("=");s[a[0]]=a[1]})),s}get(t){return this.params[t]}}("localhost:8080?type=2&id=1&name=xiaoming"),console.log(t.get("type")),t.get("id"),t.get("name")})();

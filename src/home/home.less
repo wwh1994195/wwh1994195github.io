@@ -24,18 +24,21 @@ body{
     display: flex;
 }
 .left{
-    width: 30%;
+    
     padding: 30px;
+    flex: 1;
     
 }
 .content{
-    width: 40%;
+    
     height: 80vh;
     min-width: 500px;
+    flex: 1;
 }
 .right{
-    width: 30%;
+    
     padding: 30px; 
+    flex: 1;
     
 }
 .list{
@@ -58,4 +61,22 @@ p{
     -webkit-line-clamp: 3;
     overflow: hidden;
 
+}
+.right-tit{
+    display: none;
+}
+.right-title{
+    display: block;
+    list-style: none;
+    font-size: 20px;
+    animation: mytitle 3s;
+    position: relative;
+}
+@keyframes mytitle{
+    from{
+        left: 0px; top: 200px;
+    }
+    to{
+        left: 0px; top:0px
+    }
 }

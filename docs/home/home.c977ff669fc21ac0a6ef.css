@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  text-shadow: #FF0000 0 0 10px;
+  color: white;
+  font-size: 60px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.main {
+  height: 80vh;
+  display: flex;
+}
+.left {
+  padding: 30px;
+  flex: 1;
+}
+.content {
+  height: 80vh;
+  min-width: 500px;
+  flex: 1;
+}
+.right {
+  padding: 30px;
+  flex: 1;
+}
+.list {
+  width: 350px;
+  height: 45px;
+}
+p {
+  text-indent: 2rem;
+}
+.picture {
+  width: 410px;
+  height: 500px;
+}
+.case {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.right-tit {
+  display: none;
+}
+.right-title {
+  display: block;
+  list-style: none;
+  font-size: 20px;
+  animation: mytitle 3s;
+  position: relative;
+}
+@keyframes mytitle {
+  from {
+    left: 0px;
+    top: 200px;
+  }
+  to {
+    left: 0px;
+    top: 0px;
+  }
+}
+

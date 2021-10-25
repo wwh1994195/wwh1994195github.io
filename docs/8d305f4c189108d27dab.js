@@ -1,0 +1,1 @@
+class Animation{constructor(t){this.target=t}run(){this.target.run()}}class Ani{constructor(t){this.name=t}run(){let t=document.querySelectorAll("li");!function n(){if(!t.length)return;t=Array.from(t);let i=t.shift();i.classList.add("right-title"),i.addEventListener("animationstart",(function(t){setTimeout(n,100)}))}()}}let ani=new Animation(new Ani);ani.run();
